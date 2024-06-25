@@ -33,6 +33,11 @@ jobs:
           cd terraform
           terraform init
 
+      - name: Refresh Terraform state
+        run: |
+          cd terraform
+          terraform refresh
+          
       - name: Validate Terraform configuration
         run: |
           cd terraform
