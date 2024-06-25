@@ -5,6 +5,11 @@ terraform {
       version = "~> 4.47.0"
     }
   }
+  backend "s3" {
+    bucket = "moins-tf-bucket"
+    key    = "my_lambda/terraform.tfstate"
+    region = "us-east-1"
+  }
 }
 
 provider "aws" {
@@ -13,8 +18,7 @@ provider "aws" {
 
 resource "aws_s3_bucket" "moins-tf-bucket" {
   bucket = "moins-tf-bucket"
-  force_destroy = true
   lifecycle {
-    prevent_destroy = false
+    prevent_destroy = true
   }
 }
