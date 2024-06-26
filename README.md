@@ -17,13 +17,8 @@ AWS_Lambda/
 │   └── code
 │       └── current_time.py
 ├── terraform
-│   ├── current_time.zip
-│   ├── errored.tfstate
 │   ├── lambda.tf
-│   ├── lambda_function.zip
-│   ├── main.tf
-│   ├── terraform.tfstate
-│   └── terraform.tfstate.backup
+│   └── main.tf
 └── test
     ├── __init__.py
     └── current_time_test.py
