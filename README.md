@@ -2,6 +2,10 @@
 
 ![current_time Lambda Function Output](LambdaResult.png)
 
+```bash
+### GHA Workflow
+├── Run Tests ──> Initialize Terraform ──> Refresh Terraform ──> Validate Terraform ──> Deploy Terraform
+```
 
 ```bash
 ### Project Folder Structure
@@ -17,3 +21,4 @@ AWS_Lambda/
 ├── LambdaResult.png
 └── .gitignore
 ```
+
