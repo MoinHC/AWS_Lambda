@@ -54,8 +54,4 @@ jobs:
           cd terraform
           terraform plan -out=tfplan
           terraform apply -input=false tfplan
-
-      - name: Cleanup Terraform plan
-        run:  |
-          cd terraform
           rm -rf tfplan*
