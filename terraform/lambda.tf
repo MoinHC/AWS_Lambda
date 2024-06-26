@@ -21,7 +21,7 @@ resource "aws_iam_role" "moins-lambda-role" {
 
 data "archive_file" "current_time" {
   type        = "zip"
-  source_file = "../src/current_time.py"
+  source_file = "../src/code/current_time.py"
   output_path = "current_time.zip"
 }
 
@@ -32,5 +32,5 @@ resource "aws_lambda_function" "moins-lambda-function" {
   handler       = "current_time.current_time"
   runtime       = "python3.8"
 
-  source_code_hash = filebase64sha256("../src/current_time.py")
+  source_code_hash = filebase64sha256("../src/code/current_time.py")
 }
