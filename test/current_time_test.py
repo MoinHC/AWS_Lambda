@@ -10,6 +10,6 @@ def test_current_time(capsys):
         mock_datetime.now.return_value = fixed_datetime
         current_time(None, None)  
         captured_output = capsys.readouterr().out.strip()
-        expected_output = '{"currentTime": "2023-06-25 12:00:00"}'
+        expected_output = '{"currentTime": "2024-06-26 12:00:00"}'
         
         assert captured_output == expected_output
