@@ -8,17 +8,24 @@
 ```
 
 ```bash
-### Project Folder Structure
+### Project Folder Structure`
 AWS_Lambda/
-├── terraform/
-│   ├── current_time.py
-│   ├── lambda.tf
-│   └── main.tf
-├── .github/
-│   └── workflows/
-│       └── Terraform_deploy.yml/
-├── README.md
 ├── LambdaResult.png
-└── .gitignore
+├── README.md
+├── requirements.txt
+├── src
+│   └── code
+│       └── current_time.py
+├── terraform
+│   ├── current_time.zip
+│   ├── errored.tfstate
+│   ├── lambda.tf
+│   ├── lambda_function.zip
+│   ├── main.tf
+│   ├── terraform.tfstate
+│   └── terraform.tfstate.backup
+└── test
+    ├── __init__.py
+    └── current_time_test.py
 ```
 
